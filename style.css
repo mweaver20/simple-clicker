@@ -1,0 +1,46 @@
+/* 
+center all stuff in the middle of the screen
+switch to a dark-mode theme
+make text easy to see
+*/
+* { margin: 0; padding: 0; }
+body {
+	height: 100vh;
+	font-family: Arial, Helvetica, sans-serif;
+	color: white;
+	background-color: #212121;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: max-content;
+    justify-content: center;
+	justify-items: center;
+    align-content: center;
+    user-select: none;
+}
+
+#cash-txt {
+	justify-self: left;
+}
+
+button {
+	position: relative;
+	width: max-content;
+    padding: 1rem 1.2rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color:  #393939 ;
+    bottom: 5px;
+    box-shadow: 0 5px 5px #393939;
+}
+
+button:active {
+    background-color: #404040;
+    bottom: 0;
+    box-shadow: 0 0 5px #393939;
+}
